@@ -22,3 +22,4 @@ let nome = prompt("Qual o seu nome ?")
 alert("seu nome é " + nome);
 
 let idade = prompt("Ola, " + mais + ". qual a sua idade?")
+pedamvasm b
