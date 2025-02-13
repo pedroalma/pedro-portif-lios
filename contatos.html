@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,18 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
     <title>contatos</title>
 </head>
+
 <body>
     <header class="header-principal">
-   
+
         <div class="title-header">
-        <img src="images/logo.png" alt="logo">
-     
-    <h1> Contatos</h1>
-    </div>
-    <a class="link-icon" href="index.html">
-        <i class="fa-solid fa-house"></i>
-    </a>
+            <img src="images/logo.png" alt="logo">
+
+            <h1> Contatos</h1>
+        </div>
+        <a class="link-icon" href="index.html">
+            <i class="fa-solid fa-house"></i>
+        </a>
     </header>
     <main class="main-contatos">
         <div class="div1-contatos">
@@ -44,23 +46,25 @@
             <form>
                 <div class="input-grupo">
                     <label>Nome:</label>
-                    <input type="text">
+                    <input type="text" id="nome">
                 </div>
                 <div class="input-grupo">
                     <label>Email:</label>
-                    <input type="email">
+                    <input type="email" id="email">
                 </div>
                 <div class="input-grupo">
                     <label>telefone:</label>
-                    <input type="tel">
+                    <input type="tel" id="telefone">
                 </div>
                 <div class="input-grupo">
                     <label>Mensagem:</label>
-                    <textarea></textarea>
+                    <textarea id="Mensagem"></textarea>
                 </div>
-                <button class="envia-form">Enviar</button>
+                <button class="envia-form" onclick="verificarCampos(event);" >Enviar</button>
+                <p id="MensagemObt"></p>
             </form>
         </div>
     </main>
 </body>
+<script src="./js/script.js"></script>
 </html>
