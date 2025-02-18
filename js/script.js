@@ -8,6 +8,9 @@ let telefone = document.getElementById("telefone");
 let mensagem = document.getElementById("Mensagem")
 let paragrafo = document.getElementById("MensagemObt");
 
+emailjs.init('2_vCwSoqArS1p4PyW');//inicializando o emailjs com API_KEY
+
+
 // innerText adiciona umtexto no html atraves do js 
 // paragrafo.innerText = "exemplo de texto";
 
@@ -24,8 +27,17 @@ function verificarCampos(event) {
         paragrafo.style.color ="";
         paragrafo.style.fontWeight = "bold";
         paragrafo.style.textAlign = "center";
+
+        emailjs.send('service_ossbdao' , 'template_po5jsk4',
+            {
+                to_name: nome.value,
+                to_email: email.value,
+                to_tel: telefone.value,
+                to_message: mensagem.value 
+            }
+        );
     }
-}
+};
 
 // function verificarCampos(event) {
 //     event.preventDefault();
