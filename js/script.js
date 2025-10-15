@@ -8,7 +8,7 @@ let telefone = document.getElementById("telefone");
 let mensagem = document.getElementById("Mensagem")
 let paragrafo = document.getElementById("MensagemObt");
 
-emailjs.init('2_vCwSoqArS1p4PyW');//inicializando o emailjs com API_KEY
+emailjs.init('yjUoGTYvdUKGnu4QA');//inicializando o emailjs com API_KEY
 
 
 // innerText adiciona umtexto no html atraves do js 
